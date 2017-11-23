@@ -1,0 +1,122 @@
+Copying cached Maven dependencies to ~/.m2/repository/
+Clone a temporary clone of the student's solution ...
+Cloning into 'solution'...
+done.
+Already on 'master'
+Your branch is up-to-date with 'origin/master'.
+Check out latest commit before the deadline
+Checkout commit 75fdd50
+Note: checking out '75fdd50'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 75fdd50... Finished implementation, pushing to check Travis CI compatibility
+Run mvn install on the student's solution
+Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
+Maven home: /usr/share/maven
+Java version: 1.8.0_151, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-8-openjdk-amd64/jre
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "4.4.20-moby", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CSC301, Fall 2017, Individual Assignment 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] Downloading from jitpack.io: https://jitpack.io/com/github/csc301-fall-2016/csc301-java-utils/master-SNAPSHOT/maven-metadata.xml
+[INFO] Downloaded from jitpack.io: https://jitpack.io/com/github/csc301-fall-2016/csc301-java-utils/master-SNAPSHOT/maven-metadata.xml (402 B at 543 B/s)
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ a4 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:compile (default-compile) @ a4 ---
+[INFO] Compiling 9 source files to /solution/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ a4 ---
+[INFO] Not copying test resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:testCompile (default-testCompile) @ a4 ---
+[INFO] Not compiling test sources
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ a4 ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ a4 ---
+[INFO] Building jar: /solution/target/a4-0.0.1-SNAPSHOT.jar
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ a4 ---
+[INFO] Installing /solution/target/a4-0.0.1-SNAPSHOT.jar to /root/.m2/repository/edu/toronto/csc301/a4/0.0.1-SNAPSHOT/a4-0.0.1-SNAPSHOT.jar
+[INFO] Installing /solution/pom.xml to /root/.m2/repository/edu/toronto/csc301/a4/0.0.1-SNAPSHOT/a4-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.038 s
+[INFO] Finished at: 2017-11-23T04:25:53Z
+[INFO] Final Memory: 18M/121M
+[INFO] ------------------------------------------------------------------------
+Create a temporary clone of the auto-marker repo ...
+Cloning into 'automarker'...
+done.
+Run mvn test on the automarker
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building CSC301, Fall 2017, Individual Assignment 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ a4-automarker ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:compile (default-compile) @ a4-automarker ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ a4-automarker ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:2.1:testCompile (default-testCompile) @ a4-automarker ---
+[INFO] Compiling 10 source files to /automarker/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ a4-automarker ---
+[INFO] Surefire report directory: /automarker/target/surefire-reports
+[INFO] Using configured provider org.apache.maven.surefire.junitcore.JUnitCoreProvider
+[INFO] parallel='none', perCoreThreadCount=true, threadCount=0, useUnlimitedThreads=false, threadCountSuites=0, threadCountClasses=0, threadCountMethods=0, parallelOptimized=true
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running edu.toronto.csc301.step2.GridRobotTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec - in edu.toronto.csc301.step2.GridRobotTest
+Running edu.toronto.csc301.step2.WarehouseTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.097 sec - in edu.toronto.csc301.step2.WarehouseTest
+Running edu.toronto.csc301.step1.GridRobotTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 sec - in edu.toronto.csc301.step1.GridRobotTest
+Running edu.toronto.csc301.step1.WarehouseTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.006 sec - in edu.toronto.csc301.step1.WarehouseTest
+Running edu.toronto.csc301.step3.PathPlannerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 sec - in edu.toronto.csc301.step3.PathPlannerTest
+Running edu.toronto.csc301.step3.PathPlannerAdvancedTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.002 sec - in edu.toronto.csc301.step3.PathPlannerAdvancedTest
+Running edu.toronto.csc301.SetupTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec - in edu.toronto.csc301.SetupTest
+
+Results :
+
+Tests run: 42, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 3.020 s
+[INFO] Finished at: 2017-11-23T04:25:59Z
+[INFO] Final Memory: 13M/117M
+[INFO] ------------------------------------------------------------------------
